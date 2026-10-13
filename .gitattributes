@@ -1,0 +1,10 @@
+# 统一换行符，避免 Windows / Unix 之间产生全文件 diff
+* text=auto eol=lf
+
+# 语料原文保持原样，不做任何换行符转换
+corpus/*.md -text
+
+*.py text eol=lf
+*.md text eol=lf
+LICENSE text eol=lf
+.gitignore text eol=lf
